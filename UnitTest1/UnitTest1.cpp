@@ -36,7 +36,7 @@ namespace UnitTest1
 		TEST_METHOD(TestSetlength)
 		{
 			int length = 1;
-			int input = 3;
+			int input = 2;
 			
 			
 			int expected = input;
@@ -46,7 +46,7 @@ namespace UnitTest1
 		TEST_METHOD(TestSetlength1)
 		{
 			int length = 1;
-			int input = -5;
+			int input = -20;
 			
 
 			int expected = input;
@@ -56,14 +56,43 @@ namespace UnitTest1
 		TEST_METHOD(TestSetlength2)
 		{
 			int length = 1;
-			int input = 105;
+			int input = 200;
 			
 
 			int expected = input;
 			int actual = setLength(input, &length);
 			Assert::AreEqual(expected, actual);
 		}
+		TEST_METHOD(TestSetWidth)
+		{
+			int length = 1;
+			int input = 3;
 
+
+			int expected = input;
+			int actual = setWidth(input, &length);
+			Assert::AreEqual(expected, actual);
+		}
+		TEST_METHOD(TestSetWidth1)
+		{
+			int length = 1;
+			int input = -5;
+
+
+			int expected = input;
+			int actual = setWidth(input, &length);
+			Assert::AreEqual(expected, actual);
+		}
+		TEST_METHOD(TestSetWidth2)
+		{
+			int length = 1;
+			int input = 105;
+
+
+			int expected = input;
+			int actual = setWidth(input, &length);
+			Assert::AreEqual(expected, actual);
+		}
 
 
 
